@@ -15,7 +15,8 @@ RUN apt-get -y update \
         zip \
         libpng-dev \
         zlib1g-dev \
-        libzip-dev
+        libzip-dev \
+        rsync
 
 RUN docker-php-ext-install \
     pdo_mysql \
