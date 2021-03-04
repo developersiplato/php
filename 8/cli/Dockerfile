@@ -28,7 +28,7 @@ RUN docker-php-ext-install \
 
 RUN echo "error_reporting = E_ALL" > /usr/local/etc/php/php.ini \
     && echo "display_startup_errors = On" >> /usr/local/etc/php/php.ini \
-    && echo "display_errors = On" >> /usr/local/etc/php/php.ini \
+    && echo "display_errors = On" >> /usr/local/etc/php/php.ini
 
 #RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
 #    && apt-get install -y nodejs
