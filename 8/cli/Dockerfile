@@ -26,20 +26,14 @@ RUN docker-php-ext-install \
     zip \
     pcntl
 
-RUN pecl install xdebug \
-    && docker-php-ext-enable xdebug \
-    && echo "error_reporting = E_ALL" > /usr/local/etc/php/php.ini \
+RUN echo "error_reporting = E_ALL" > /usr/local/etc/php/php.ini \
     && echo "display_startup_errors = On" >> /usr/local/etc/php/php.ini \
     && echo "display_errors = On" >> /usr/local/etc/php/php.ini \
-    && echo "xdebug.remote_enable=1" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
-    && echo "xdebug.remote_connect_back=1" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
-    && echo "xdebug.idekey=\"PHPSTORM\"" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
-    && echo "xdebug.remote_port=9000" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
-    && apt-get install -y nodejs
-
-RUN npm install -g grunt
+#RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
+#    && apt-get install -y nodejs
+#
+#RUN npm install -g grunt
 
 RUN mkdir /root/.ssh
 RUN touch /root/.ssh/config
