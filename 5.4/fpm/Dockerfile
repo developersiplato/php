@@ -10,7 +10,7 @@ RUN apt-get -y update \
         make \
         unzip \
         wget \
-        mysql-client
+        mariadb-client
 
 RUN docker-php-ext-install \
     pdo \

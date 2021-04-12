@@ -11,7 +11,7 @@ RUN apt-get -y update \
         make \
         unzip \
         wget \
-        mysql-client \
+        mariadb-client \
         zlib1g-dev \
         zip
 
