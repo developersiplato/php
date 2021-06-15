@@ -9,18 +9,19 @@ RUN apt-get -y update \
         make \
         unzip \
         wget \
-        mysql-client \
+        mariadb-client \
         gnupg2 \
         tar \
         zip \
         libpng-dev \
         zlib1g-dev \
+        libzip-dev \
+        zip \
         rsync
 
 RUN docker-php-ext-install \
     pdo_mysql \
     mysqli \
-    mbstring \
     bcmath \
     sockets \
     gd \

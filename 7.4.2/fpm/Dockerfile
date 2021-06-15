@@ -11,6 +11,8 @@ RUN apt-get update && apt-get install -y \
     wget \
     libpng-dev \
     zlib1g-dev \
+    libzip-dev \
+    zip \
     msmtp
 
 RUN docker-php-ext-install \
