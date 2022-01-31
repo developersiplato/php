@@ -1,4 +1,4 @@
-FROM php:8-fpm
+FROM php:8.0.2-fpm
 
 MAINTAINER Maxence POUTORD <maxence.poutord@gmail.com>
 
