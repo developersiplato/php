@@ -26,7 +26,8 @@ RUN docker-php-ext-install \
     sockets \
     gd \
     zip \
-    pcntl
+    pcntl \
+    opcache
 
 RUN pecl install xdebug \
     && docker-php-ext-enable xdebug \
