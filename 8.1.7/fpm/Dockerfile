@@ -22,7 +22,8 @@ RUN docker-php-ext-install \
     sockets \
     bcmath \
     pcntl \
-    opcache
+    opcache \
+    exif
 
 
 # Set timezone
