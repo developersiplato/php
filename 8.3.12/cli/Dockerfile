@@ -1,4 +1,4 @@
-FROM php:8.3.12-cli-alpine
+FROM php:8.3.12-cli-bullseye
 USER root
 
 RUN apt-get -y update \

@@ -1,4 +1,4 @@
-FROM php:8.3.12-fpm-alpine
+FROM php:8.3.12-fpm-bullseye
 
 MAINTAINER Maxence POUTORD <maxence.poutord@gmail.com>
 
